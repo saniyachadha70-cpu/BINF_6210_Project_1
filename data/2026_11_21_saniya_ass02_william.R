@@ -192,8 +192,7 @@ te_shared |> filter(species == "T. britovi") |>
   )
 
 te_shared |> filter(species == "T. spiralis") |>
-  ggplot(aes(x = perc_div, y = matching_class)) + geom_boxplot()
-+
+  ggplot(aes(x = perc_div, y = matching_class)) + geom_boxplot() +
   labs(
     title = "% Divergence of Shared TE Classes in T. spiralis", 
     x = "% Divergence",
